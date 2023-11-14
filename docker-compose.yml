@@ -1,0 +1,22 @@
+version: "1"
+services:
+  user-docker:
+    #container_name: user-app
+    image: user-docker
+    ports: 
+      - 9090:8081
+    environment:
+      MYSQL_HOST: localhost
+      MYSQL_USER: root
+      MYSQL_PASSWORD: elephant
+      MYSQL_PORT: 3306
+      
+ # mysqldb:
+ #   container_name: mysqldb
+ #   image: mmysql
+ #   ports:
+ #     - 3307:3306
+ #   environment:
+ #     MYSQL_DATABASE: user_schema
+ #     MYSQL_ROOT_PASSWORD: elephant
+      
